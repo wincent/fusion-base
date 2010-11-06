@@ -24,11 +24,15 @@
 
 #import "WOFBase.h"
 
+#import <Cocoa/Cocoa.h>
+
 @implementation WOFBase
 
 - (void)activate
 {
     NSLog(@"WOFBase reporting for duty!");
+    (void)[NSApplication sharedApplication];
+    [NSApp run];
 }
 
 @end

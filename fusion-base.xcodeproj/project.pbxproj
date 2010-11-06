@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
 		BC2481481285D82F00D91727 /* WOFBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2481471285D82F00D91727 /* WOFBase.m */; };
-		BC2481651285D9F100D91727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2481641285D9F100D91727 /* Foundation.framework */; };
+		BC2481D31285E49E00D91727 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2481D21285E49E00D91727 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +25,7 @@
 		BC2481461285D82F00D91727 /* WOFBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOFBase.h; sourceTree = "<group>"; };
 		BC2481471285D82F00D91727 /* WOFBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOFBase.m; sourceTree = "<group>"; };
 		BC2481641285D9F100D91727 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC2481D21285E49E00D91727 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC2481651285D9F100D91727 /* Foundation.framework in Frameworks */,
+				BC2481D31285E49E00D91727 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +57,7 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				BC2481D21285E49E00D91727 /* Cocoa.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
 				BC2481641285D9F100D91727 /* Foundation.framework */,
 			);
