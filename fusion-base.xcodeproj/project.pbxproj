@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
+		BC2481481285D82F00D91727 /* WOFBase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2481471285D82F00D91727 /* WOFBase.m */; };
+		BC2481651285D9F100D91727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2481641285D9F100D91727 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,9 @@
 		BC247E7D1285AE2300D91727 /* loadable-bundle-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "loadable-bundle-target.xcconfig"; path = "buildtools/loadable-bundle-target.xcconfig"; sourceTree = "<group>"; };
 		BC247E7E1285AE2300D91727 /* release-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "release-style.xcconfig"; path = "buildtools/release-style.xcconfig"; sourceTree = "<group>"; };
 		BC247E811285AEB200D91727 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC2481461285D82F00D91727 /* WOFBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOFBase.h; sourceTree = "<group>"; };
+		BC2481471285D82F00D91727 /* WOFBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOFBase.m; sourceTree = "<group>"; };
+		BC2481641285D9F100D91727 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
+				BC2481651285D9F100D91727 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +45,7 @@
 				BC247E7A1285AE0C00D91727 /* Configuration */,
 				BC247DFD1285AD8600D91727 /* Submodules */,
 				08FB77AFFE84173DC02AAC07 /* Source */,
+				BC2481451285D7F500D91727 /* Classes */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
 				19C28FB6FE9D52B211CA2CBB /* Products */,
@@ -52,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+				BC2481641285D9F100D91727 /* Foundation.framework */,
 			);
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
@@ -97,6 +103,15 @@
 				BC247E7E1285AE2300D91727 /* release-style.xcconfig */,
 			);
 			name = Configuration;
+			sourceTree = "<group>";
+		};
+		BC2481451285D7F500D91727 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC2481461285D82F00D91727 /* WOFBase.h */,
+				BC2481471285D82F00D91727 /* WOFBase.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2481481285D82F00D91727 /* WOFBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

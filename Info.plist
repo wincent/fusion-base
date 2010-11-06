@@ -14,6 +14,8 @@
 	<string>com.wincent.fusion.base</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>NSPrincipalClass</key>
+	<string>WOFBase</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleSignature</key>
