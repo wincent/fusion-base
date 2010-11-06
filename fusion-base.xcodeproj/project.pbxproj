@@ -13,7 +13,7 @@
 
 /* Begin PBXFileReference section */
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
-		8D576316048677EA00EA77CD /* fusion-base.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fusion-base.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576316048677EA00EA77CD /* WOFBase.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WOFBase.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC247E031285ADF000D91727 /* buildtools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = buildtools; sourceTree = "<group>"; };
 		BC247E7B1285AE2300D91727 /* base-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "base-style.xcconfig"; path = "buildtools/base-style.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		19C28FB6FE9D52B211CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D576316048677EA00EA77CD /* fusion-base.bundle */,
+				8D576316048677EA00EA77CD /* WOFBase.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +117,7 @@
 			name = "fusion-base";
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = "fusion-base";
-			productReference = 8D576316048677EA00EA77CD /* fusion-base.bundle */;
+			productReference = 8D576316048677EA00EA77CD /* WOFBase.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -183,7 +183,7 @@
 			baseConfigurationReference = BC247E7D1285AE2300D91727 /* loadable-bundle-target.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = "fusion-base";
+				PRODUCT_NAME = WOFBase;
 			};
 			name = Debug;
 		};
@@ -192,7 +192,7 @@
 			baseConfigurationReference = BC247E7D1285AE2300D91727 /* loadable-bundle-target.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = "fusion-base";
+				PRODUCT_NAME = WOFBase;
 			};
 			name = Release;
 		};
