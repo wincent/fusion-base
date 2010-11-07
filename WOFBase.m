@@ -26,11 +26,28 @@
 
 @implementation WOFBase
 
+- (id)init
+{
+    if ((self = [super init]))
+    {
+        (void)[NSApplication sharedApplication];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(applicationWillFinishLaunching:)
+                                                     name:NSApplicationWillFinishLaunchingNotification
+                                                   object:nil];
+    }
+    return self;
+}
+
 - (void)activate
 {
-    NSLog(@"WOFBase reporting for duty!");
     (void)[NSApplication sharedApplication];
     [NSApp run];
+}
+
+- (void)applicationWillFinishLaunching:(NSNotification *)aNotification
+{
+    [[WOFPlugInManager sharedManager] loadAllPlugIns];
 }
 
 @end
