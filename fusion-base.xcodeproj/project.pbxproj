@@ -26,6 +26,7 @@
 		BC2481471285D82F00D91727 /* WOFBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOFBase.m; sourceTree = "<group>"; };
 		BC2481641285D9F100D91727 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC2481D21285E49E00D91727 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BC7DE68612872A9C0027C712 /* fusion-plugin-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "fusion-plugin-target.xcconfig"; path = "../fusion/fusion-plugin-target.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		BC247E7A1285AE0C00D91727 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				BC7DE68612872A9C0027C712 /* fusion-plugin-target.xcconfig */,
 				BC247E7B1285AE2300D91727 /* base-style.xcconfig */,
 				BC247E7C1285AE2300D91727 /* debug-style.xcconfig */,
 				BC247E7D1285AE2300D91727 /* loadable-bundle-target.xcconfig */,
@@ -198,7 +200,7 @@
 /* Begin XCBuildConfiguration section */
 		1DEB911B08733D790010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC247E7D1285AE2300D91727 /* loadable-bundle-target.xcconfig */;
+			baseConfigurationReference = BC7DE68612872A9C0027C712 /* fusion-plugin-target.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = WOFBase;
@@ -207,7 +209,7 @@
 		};
 		1DEB911C08733D790010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC247E7D1285AE2300D91727 /* loadable-bundle-target.xcconfig */;
+			baseConfigurationReference = BC7DE68612872A9C0027C712 /* fusion-plugin-target.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = WOFBase;
