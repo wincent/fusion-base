@@ -24,8 +24,6 @@
 
 #import "WOFBase.h"
 
-#import <Cocoa/Cocoa.h>
-
 @implementation WOFBase
 
 - (void)activate
